@@ -1,5 +1,7 @@
 // Real Estate Ranch — shared site behavior
 
+initLoader();
+
 document.addEventListener('DOMContentLoaded', () => {
   initNav();
   initMobileMenu();
@@ -28,6 +30,32 @@ function initTabs() {
   };
   triggers.forEach(t => t.addEventListener('click', () => activate(t.getAttribute('data-tab-trigger'))));
   activate(triggers[0].getAttribute('data-tab-trigger'));
+}
+
+/* Branded page loader — hides once the page (and its images) are ready */
+function initLoader() {
+  const loader = document.getElementById('page-loader');
+  if (!loader) return;
+  document.body.classList.add('is-loading');
+
+  let hidden = false;
+  const hide = () => {
+    if (hidden) return;
+    hidden = true;
+    loader.classList.add('loader-hidden');
+    document.body.classList.remove('is-loading');
+    setTimeout(() => loader.remove(), 700);
+  };
+
+  const minDelay = new Promise(resolve => setTimeout(resolve, 500));
+  const pageLoad = new Promise(resolve => {
+    if (document.readyState === 'complete') resolve();
+    else window.addEventListener('load', resolve);
+  });
+  Promise.all([minDelay, pageLoad]).then(hide);
+
+  // Safety net: never let the loader block the site if something stalls.
+  setTimeout(hide, 4000);
 }
 
 /* Sticky/transparent-to-solid nav */
