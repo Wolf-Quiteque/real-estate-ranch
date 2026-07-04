@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events & Meetups | Real Estate Ranch</title>
+<meta name="description" content="Join the next Real Estate Ranch Meetup — investors, brokers, capital, and business owners in one room. See past event recaps and RSVP for what's next.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: { ranchblack:'#111111', warmivory:'#F5F0E6', bronze:'#B87832', deepgreen:'#1F3A2E', sandstone:'#D8C3A5', claybrown:'#7A4A28', steelgray:'#606060', dustytan:'#C9A875', softwhite:'#FBFAF7' },
+      fontFamily: { head:['Montserrat','sans-serif'], body:['Inter','sans-serif'] }
+    }}
+  }
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-body bg-warmivory text-ranchblack">
+
+<!-- ============ NAV ============ -->
+<nav id="site-nav">
+  <div class="container-ranch flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="assets/img/logo.png" alt="Real Estate Ranch" class="h-12 w-auto rounded-sm">
+    </a>
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="events.html" class="nav-link active">Events</a>
+      <a href="community.html" class="nav-link">Community</a>
+      <a href="sponsors.html" class="nav-link">Sponsors</a>
+      <a href="contact.html" class="nav-link">Join / Contact</a>
+    </div>
+    <a href="contact.html" class="nav-cta hidden lg:inline-block">Join the Community</a>
+    <button id="menu-toggle" class="lg:hidden text-softwhite" aria-label="Toggle menu">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="lg:hidden container-ranch">
+    <div class="flex flex-col gap-5 py-6 border-t border-white/10 mt-4">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="events.html" class="nav-link active">Events</a>
+      <a href="community.html" class="nav-link">Community</a>
+      <a href="sponsors.html" class="nav-link">Sponsors</a>
+      <a href="contact.html" class="nav-link">Join / Contact</a>
+      <a href="contact.html" class="btn btn-primary btn-block mt-2">Join the Community</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ PAGE HERO ============ -->
+<header class="relative h-[65vh] min-h-[420px] flex items-end">
+  <div class="hero-media"><img src="assets/img/901912a01d149def2ae18a7078b4baee.jpeg" alt="Real Estate Ranch Meetup" loading="eager"></div>
+  <div class="page-hero-scrim"></div>
+  <div class="container-ranch relative z-10 pb-16">
+    <p class="eyebrow text-white mb-4 reveal">Events &amp; Meetups</p>
+    <h1 class="font-head font-extrabold text-white text-4xl lg:text-6xl reveal reveal-delay-1">Real Estate Ranch Meetup</h1>
+    <p class="text-white/85 text-lg mt-4 reveal reveal-delay-2">Investors. Brokers. Capital. Business.</p>
+  </div>
+</header>
+
+<!-- ============ UPCOMING MEETUP ============ -->
+<section class="py-24 lg:py-28">
+  <div class="container-ranch grid lg:grid-cols-5 gap-10">
+    <div class="lg:col-span-3 reveal">
+      <p class="eyebrow mb-4">Next Meetup</p>
+      <h2 class="font-head font-extrabold text-3xl lg:text-4xl mb-6">Deal Makers Welcome.</h2>
+      <p class="text-steelgray text-lg leading-relaxed mb-8 max-w-xl">Our next meetup brings together investors, lenders, brokers, and business owners for an evening of real conversations and real relationships. Date, time, and venue announced soon — join the list to get notified first.</p>
+      <div class="grid sm:grid-cols-3 gap-6 mb-10 max-w-xl">
+        <div><p class="eyebrow mb-1 text-xs">Date</p><p class="font-head font-bold">Announced Soon</p></div>
+        <div><p class="eyebrow mb-1 text-xs">Location</p><p class="font-head font-bold">Houston, TX</p></div>
+        <div><p class="eyebrow mb-1 text-xs">Who's Invited</p><p class="font-head font-bold">Everyone Building</p></div>
+      </div>
+      <a href="contact.html" class="btn btn-primary">RSVP Now</a>
+    </div>
+    <div class="lg:col-span-2 reveal reveal-delay-2">
+      <div class="aspect-[4/5] rounded-sm overflow-hidden card-lift"><img src="assets/img/img5.jpeg" alt="Real Estate Ranch attendee" class="w-full h-full object-cover" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT TO EXPECT ============ -->
+<section class="py-24 lg:py-28 bg-ranchblack text-softwhite">
+  <div class="container-ranch">
+    <div class="max-w-xl mb-16 reveal">
+      <p class="eyebrow mb-4">What to Expect</p>
+      <h2 class="font-head font-extrabold text-3xl lg:text-4xl">A Branded Business Room, Not a Casual Gathering</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="reveal card-lift bg-white/5 border border-white/10 rounded-sm p-8">
+        <h3 class="font-head font-bold text-xl mb-3">Meet the Room</h3>
+        <p class="text-white/70 leading-relaxed">Investors, brokers, lenders, and business owners — name badges on, real conversations from the first handshake.</p>
+      </div>
+      <div class="reveal reveal-delay-1 card-lift bg-white/5 border border-white/10 rounded-sm p-8">
+        <h3 class="font-head font-bold text-xl mb-3">Learn Something Real</h3>
+        <p class="text-white/70 leading-relaxed">Speakers and spotlights on operators actually doing deals — strategies you can use the next week.</p>
+      </div>
+      <div class="reveal reveal-delay-2 card-lift bg-white/5 border border-white/10 rounded-sm p-8">
+        <h3 class="font-head font-bold text-xl mb-3">Leave Connected</h3>
+        <p class="text-white/70 leading-relaxed">Every attendee photo, every conversation, every intro is built to turn into your next relationship or deal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RECAP GALLERY ============ -->
+<section class="py-24 lg:py-28">
+  <div class="container-ranch">
+    <div class="max-w-xl mb-14 reveal">
+      <p class="eyebrow mb-4">Past Event Recap</p>
+      <h2 class="font-head font-extrabold text-3xl lg:text-4xl">Scenes from the Ranch</h2>
+    </div>
+    <div class="masonry reveal">
+      <figure data-lightbox="assets/img/img2.jpeg"><img src="assets/img/img2.jpeg" alt="Ranch meetup recap" loading="lazy"></figure>
+      <figure data-lightbox="assets/img/img3.jpeg"><img src="assets/img/img3.jpeg" alt="Ranch meetup recap" loading="lazy"></figure>
+      <figure data-lightbox="assets/img/img4.jpeg"><img src="assets/img/img4.jpeg" alt="Ranch meetup recap" loading="lazy"></figure>
+      <figure data-lightbox="assets/img/img7.jpeg"><img src="assets/img/img7.jpeg" alt="Ranch meetup recap" loading="lazy"></figure>
+      <figure data-lightbox="assets/img/img9.jpeg"><img src="assets/img/img9.jpeg" alt="Ranch meetup recap" loading="lazy"></figure>
+      <figure data-lightbox="assets/img/img10.jpeg"><img src="assets/img/img10.jpeg" alt="Ranch meetup recap" loading="lazy"></figure>
+      <figure data-lightbox="assets/img/img14.jpeg"><img src="assets/img/img14.jpeg" alt="Ranch meetup recap" loading="lazy"></figure>
+      <figure data-lightbox="assets/img/img17.jpeg"><img src="assets/img/img17.jpeg" alt="Ranch meetup recap" loading="lazy"></figure>
+      <figure data-lightbox="assets/img/important.jpeg"><img src="assets/img/important.jpeg" alt="Ranch meetup recap" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="relative py-28 lg:py-36 overflow-hidden">
+  <div class="absolute inset-0"><img src="assets/img/img11.jpeg" alt="Real Estate Ranch meetup" class="w-full h-full object-cover"></div>
+  <div class="page-hero-scrim"></div>
+  <div class="container-ranch relative z-10 text-center reveal">
+    <h2 class="font-head font-extrabold text-4xl lg:text-6xl text-white mb-8">Your Next Deal Starts Here.</h2>
+    <a href="contact.html" class="btn btn-primary">RSVP for the Next Meetup</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-ranchblack text-softwhite pt-20 pb-10">
+  <div class="container-ranch grid gap-12 lg:grid-cols-4">
+    <div class="lg:col-span-2">
+      <img src="assets/img/logo.png" alt="Real Estate Ranch" class="h-14 w-auto rounded-sm mb-6">
+      <p class="font-head text-lg text-bronze mb-3">Where Real Estate, Capital &amp; Community Meet</p>
+      <p class="text-white/60 max-w-md leading-relaxed">Real Estate Ranch is an investment and business community where real estate investors, brokers, business owners, and sponsors connect through events, education, and relationships.</p>
+    </div>
+    <div>
+      <h4 class="font-head font-bold uppercase text-sm tracking-wide mb-5">Explore</h4>
+      <ul class="space-y-3 text-white/70">
+        <li><a href="about.html" class="hover:text-bronze transition">About</a></li>
+        <li><a href="events.html" class="hover:text-bronze transition">Events</a></li>
+        <li><a href="community.html" class="hover:text-bronze transition">Community</a></li>
+        <li><a href="sponsors.html" class="hover:text-bronze transition">Sponsors</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-head font-bold uppercase text-sm tracking-wide mb-5">Get Involved</h4>
+      <ul class="space-y-3 text-white/70">
+        <li><a href="contact.html" class="hover:text-bronze transition">Join the Community</a></li>
+        <li><a href="contact.html" class="hover:text-bronze transition">RSVP for a Meetup</a></li>
+        <li><a href="sponsors.html" class="hover:text-bronze transition">Become a Sponsor</a></li>
+        <li><a href="contact.html" class="hover:text-bronze transition">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-ranch border-t border-white/10 mt-12 pt-6 flex flex-col sm:flex-row justify-between gap-2 text-xs text-white/40">
+    <span>&copy; 2026 Real Estate Ranch. All rights reserved.</span>
+    <span>Houston, TX</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

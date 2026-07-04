@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join / Contact | Real Estate Ranch</title>
+<meta name="description" content="RSVP for the next Real Estate Ranch meetup, join the community list, or get in touch — investors, brokers, and business owners welcome.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: { ranchblack:'#111111', warmivory:'#F5F0E6', bronze:'#B87832', deepgreen:'#1F3A2E', sandstone:'#D8C3A5', claybrown:'#7A4A28', steelgray:'#606060', dustytan:'#C9A875', softwhite:'#FBFAF7' },
+      fontFamily: { head:['Montserrat','sans-serif'], body:['Inter','sans-serif'] }
+    }}
+  }
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-body bg-warmivory text-ranchblack">
+
+<!-- ============ NAV ============ -->
+<nav id="site-nav">
+  <div class="container-ranch flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="assets/img/logo.png" alt="Real Estate Ranch" class="h-12 w-auto rounded-sm">
+    </a>
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="events.html" class="nav-link">Events</a>
+      <a href="community.html" class="nav-link">Community</a>
+      <a href="sponsors.html" class="nav-link">Sponsors</a>
+      <a href="contact.html" class="nav-link active">Join / Contact</a>
+    </div>
+    <a href="contact.html" class="nav-cta hidden lg:inline-block">Join the Community</a>
+    <button id="menu-toggle" class="lg:hidden text-softwhite" aria-label="Toggle menu">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="lg:hidden container-ranch">
+    <div class="flex flex-col gap-5 py-6 border-t border-white/10 mt-4">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="events.html" class="nav-link">Events</a>
+      <a href="community.html" class="nav-link">Community</a>
+      <a href="sponsors.html" class="nav-link">Sponsors</a>
+      <a href="contact.html" class="nav-link active">Join / Contact</a>
+      <a href="contact.html" class="btn btn-primary btn-block mt-2">Join the Community</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ PAGE HERO ============ -->
+<header class="relative h-[65vh] min-h-[420px] flex items-end">
+  <div class="hero-media"><img src="assets/img/img1.jpeg" alt="Real Estate Ranch meetup" loading="eager"></div>
+  <div class="page-hero-scrim"></div>
+  <div class="container-ranch relative z-10 pb-16">
+    <p class="eyebrow text-white mb-4 reveal">Join / Contact</p>
+    <h1 class="font-head font-extrabold text-white text-4xl lg:text-6xl reveal reveal-delay-1">Ready to Join the Room?</h1>
+  </div>
+</header>
+
+<!-- ============ FORMS ============ -->
+<section class="py-24 lg:py-28">
+  <div class="container-ranch max-w-3xl mx-auto">
+
+    <div class="flex flex-wrap gap-3 justify-center mb-14 reveal">
+      <button data-tab-trigger="rsvp" class="font-head font-bold text-sm uppercase tracking-wide px-6 py-3 rounded-full border border-ranchblack text-ranchblack bg-transparent transition">RSVP for a Meetup</button>
+      <button data-tab-trigger="join" class="font-head font-bold text-sm uppercase tracking-wide px-6 py-3 rounded-full border border-ranchblack text-ranchblack bg-transparent transition">Join the Community</button>
+      <button data-tab-trigger="general" class="font-head font-bold text-sm uppercase tracking-wide px-6 py-3 rounded-full border border-ranchblack text-ranchblack bg-transparent transition">General Contact</button>
+    </div>
+
+    <!-- RSVP -->
+    <div data-tab-panel="rsvp" class="reveal">
+      <div class="relative">
+        <form data-validate class="space-y-5 bg-white border border-sandstone rounded-sm p-8 lg:p-10">
+          <h2 class="font-head font-extrabold text-2xl mb-1">RSVP for the Next Meetup</h2>
+          <p class="text-steelgray mb-6">Date and location announced soon — reserve your spot and we'll notify you first.</p>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="font-head text-sm font-bold mb-2 block">Full Name</label>
+              <input type="text" required class="field-input" placeholder="Jane Doe">
+              <p class="field-error-msg">Please enter your name.</p>
+            </div>
+            <div>
+              <label class="font-head text-sm font-bold mb-2 block">Email</label>
+              <input type="email" required class="field-input" placeholder="jane@company.com">
+              <p class="field-error-msg">Please enter a valid email.</p>
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="font-head text-sm font-bold mb-2 block">Phone</label>
+              <input type="tel" required class="field-input" placeholder="(555) 555-5555">
+              <p class="field-error-msg">Please enter a valid phone number.</p>
+            </div>
+            <div>
+              <label class="font-head text-sm font-bold mb-2 block">Guests Attending</label>
+              <select required class="field-input">
+                <option value="">Select</option>
+                <option>Just Me</option>
+                <option>Me + 1</option>
+                <option>Me + 2</option>
+                <option>Me + 3 or More</option>
+              </select>
+              <p class="field-error-msg">Please select an option.</p>
+            </div>
+          </div>
+          <div>
+            <label class="font-head text-sm font-bold mb-2 block">I'm Coming As A...</label>
+            <select required class="field-input">
+              <option value="">Select</option>
+              <option>Investor</option>
+              <option>Broker</option>
+              <option>Lender</option>
+              <option>Business Owner / Vendor</option>
+            </select>
+            <p class="field-error-msg">Please select an option.</p>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">RSVP Now</button>
+        </form>
+        <div class="form-success hidden absolute inset-0 bg-deepgreen text-softwhite rounded-sm flex flex-col items-center justify-center text-center p-10">
+          <svg class="w-14 h-14 text-bronze mb-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>
+          <h3 class="font-head font-bold text-2xl mb-2">You're On the List</h3>
+          <p class="text-white/70 max-w-sm">We'll send meetup details to your inbox as soon as they're announced. See you at the Ranch.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JOIN -->
+    <div data-tab-panel="join" class="hidden reveal">
+      <div class="relative">
+        <form data-validate class="space-y-5 bg-white border border-sandstone rounded-sm p-8 lg:p-10">
+          <h2 class="font-head font-extrabold text-2xl mb-1">Join the Community List</h2>
+          <p class="text-steelgray mb-6">Get event invites, recap content, and community news straight to your inbox.</p>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="font-head text-sm font-bold mb-2 block">Full Name</label>
+              <input type="text" required class="field-input" placeholder="Jane Doe">
+              <p class="field-error-msg">Please enter your name.</p>
+            </div>
+            <div>
+              <label class="font-head text-sm font-bold mb-2 block">Email</label>
+              <input type="email" required class="field-input" placeholder="jane@company.com">
+              <p class="field-error-msg">Please enter a valid email.</p>
+            </div>
+          </div>
+          <div>
+            <label class="font-head text-sm font-bold mb-2 block">I'm Primarily A...</label>
+            <select required class="field-input">
+              <option value="">Select</option>
+              <option>Investor</option>
+              <option>Broker</option>
+              <option>Lender</option>
+              <option>Business Owner / Vendor</option>
+              <option>Other</option>
+            </select>
+            <p class="field-error-msg">Please select an option.</p>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Join the Ranch</button>
+        </form>
+        <div class="form-success hidden absolute inset-0 bg-deepgreen text-softwhite rounded-sm flex flex-col items-center justify-center text-center p-10">
+          <svg class="w-14 h-14 text-bronze mb-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>
+          <h3 class="font-head font-bold text-2xl mb-2">Welcome to the Ranch</h3>
+          <p class="text-white/70 max-w-sm">You're officially part of the community list. Keep an eye on your inbox.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- GENERAL -->
+    <div data-tab-panel="general" class="hidden reveal">
+      <div class="relative">
+        <form data-validate class="space-y-5 bg-white border border-sandstone rounded-sm p-8 lg:p-10">
+          <h2 class="font-head font-extrabold text-2xl mb-1">General Contact</h2>
+          <p class="text-steelgray mb-6">Questions, partnership ideas, or something else? Send it over.</p>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="font-head text-sm font-bold mb-2 block">Full Name</label>
+              <input type="text" required class="field-input" placeholder="Jane Doe">
+              <p class="field-error-msg">Please enter your name.</p>
+            </div>
+            <div>
+              <label class="font-head text-sm font-bold mb-2 block">Email</label>
+              <input type="email" required class="field-input" placeholder="jane@company.com">
+              <p class="field-error-msg">Please enter a valid email.</p>
+            </div>
+          </div>
+          <div>
+            <label class="font-head text-sm font-bold mb-2 block">Message</label>
+            <textarea required rows="5" class="field-input" placeholder="What's on your mind?"></textarea>
+            <p class="field-error-msg">Please add a message.</p>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+        <div class="form-success hidden absolute inset-0 bg-deepgreen text-softwhite rounded-sm flex flex-col items-center justify-center text-center p-10">
+          <svg class="w-14 h-14 text-bronze mb-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>
+          <h3 class="font-head font-bold text-2xl mb-2">Message Sent</h3>
+          <p class="text-white/70 max-w-sm">Thanks for reaching out — we'll get back to you soon. Great meeting you at Real Estate Ranch.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-ranchblack text-softwhite pt-20 pb-10">
+  <div class="container-ranch grid gap-12 lg:grid-cols-4">
+    <div class="lg:col-span-2">
+      <img src="assets/img/logo.png" alt="Real Estate Ranch" class="h-14 w-auto rounded-sm mb-6">
+      <p class="font-head text-lg text-bronze mb-3">Where Real Estate, Capital &amp; Community Meet</p>
+      <p class="text-white/60 max-w-md leading-relaxed">Real Estate Ranch is an investment and business community where real estate investors, brokers, business owners, and sponsors connect through events, education, and relationships.</p>
+    </div>
+    <div>
+      <h4 class="font-head font-bold uppercase text-sm tracking-wide mb-5">Explore</h4>
+      <ul class="space-y-3 text-white/70">
+        <li><a href="about.html" class="hover:text-bronze transition">About</a></li>
+        <li><a href="events.html" class="hover:text-bronze transition">Events</a></li>
+        <li><a href="community.html" class="hover:text-bronze transition">Community</a></li>
+        <li><a href="sponsors.html" class="hover:text-bronze transition">Sponsors</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-head font-bold uppercase text-sm tracking-wide mb-5">Get Involved</h4>
+      <ul class="space-y-3 text-white/70">
+        <li><a href="contact.html" class="hover:text-bronze transition">Join the Community</a></li>
+        <li><a href="contact.html" class="hover:text-bronze transition">RSVP for a Meetup</a></li>
+        <li><a href="sponsors.html" class="hover:text-bronze transition">Become a Sponsor</a></li>
+        <li><a href="contact.html" class="hover:text-bronze transition">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-ranch border-t border-white/10 mt-12 pt-6 flex flex-col sm:flex-row justify-between gap-2 text-xs text-white/40">
+    <span>&copy; 2026 Real Estate Ranch. All rights reserved.</span>
+    <span>Houston, TX</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
